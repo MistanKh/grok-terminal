@@ -31,6 +31,8 @@ Copy-Item .\wezterm\wezterm.lua $HOME\.config\wezterm\wezterm.lua
 
 Reload WezTerm with `LEADER r` (the default leader is `Ctrl+A`), or restart it.
 
+Minimize to the taskbar with `LEADER m`.
+
 The configuration requires a Nerd Font; it uses JetBrainsMono Nerd Font with
 fallbacks. It also enables WebGPU, Mica on Windows, and 96% window opacity.
 

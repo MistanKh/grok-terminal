@@ -292,6 +292,9 @@ config.keys = {
 
   -- Quick Config Reload
   { key = "r", mods = "LEADER", action = wezterm.action.ReloadConfiguration },
+
+  -- Minimize the window to the taskbar
+  { key = "m", mods = "LEADER", action = wezterm.action.Hide },
 }
 
 -- Tab navigation with numbers (Leader + 1..9)
