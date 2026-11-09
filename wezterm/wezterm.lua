@@ -271,7 +271,7 @@ end)
 -- ----------------------------------------------------------------------------
 -- Ergonomic Keybindings & Leader Key
 -- ----------------------------------------------------------------------------
-config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
+config.leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 1000 }
 
 config.keys = {
   -- Split Panes (Leader + | for Horizontal, Leader + - for Vertical)
