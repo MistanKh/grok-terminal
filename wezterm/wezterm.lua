@@ -271,7 +271,7 @@ end)
 -- ----------------------------------------------------------------------------
 -- Ergonomic Keybindings & Leader Key
 -- ----------------------------------------------------------------------------
-config.leader = { key = "F8", mods = "NONE", timeout_milliseconds = 1000 }
+config.leader = { key = "Space", mods = "SHIFT", timeout_milliseconds = 1000 }
 
 config.keys = {
   -- Split Panes (Leader + | for Horizontal, Leader + - for Vertical)

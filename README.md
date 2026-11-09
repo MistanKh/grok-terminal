@@ -29,9 +29,9 @@ Copy-Item $HOME\.config\wezterm\wezterm.lua $HOME\.config\wezterm\wezterm.lua.ba
 Copy-Item .\wezterm\wezterm.lua $HOME\.config\wezterm\wezterm.lua
 ```
 
-Reload WezTerm with `F8`, then `r` (the leader is the single `F8` key), or restart it.
+Reload WezTerm with `Shift+Space`, then `r`, or restart it.
 
-Minimize to the taskbar with `F8`, then `m`.
+Minimize to the taskbar with `Shift+Space`, then `m`.
 
 The configuration requires a Nerd Font; it uses JetBrainsMono Nerd Font with
 fallbacks. It also enables WebGPU, Mica on Windows, and 96% window opacity.
