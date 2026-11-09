@@ -1,8 +1,9 @@
 # Grok Terminal Theme
 
 A matching WezTerm color scheme and Starship prompt built on the Grok palette:
-graphite surfaces, warm ivory text, and one desaturated steel accent. This
-repository contains the working configurations used to validate both.
+graphite surfaces, warm ivory text, and one desaturated steel accent. The
+WezTerm canvas uses the GrokNight base `#141414`. This repository contains the
+working configurations used to validate both.
 
 ## Contents
 
@@ -44,8 +45,8 @@ The scheme defines:
 
 | Role | Color |
 | --- | --- |
-| Terminal canvas | `#121212` |
-| Tab bar / chrome | `#121212` |
+| Terminal canvas | `#141414` |
+| Tab bar / chrome | `#141414` |
 | Active tab | `#1A1A1A` |
 | Selection | `#262B30` |
 | Foreground | `#E6E4DF` |
@@ -54,7 +55,7 @@ The scheme defines:
 
 The tab bar background deliberately matches the terminal canvas, so there is no
 divider band across the top. The tab edge and window-frame bottom border use the
-same `#121212`.
+same `#141414`.
 
 Only the `grok` palette table, the `Grok Obsidian` color scheme, and the tab and
 status handlers are theme-specific; the rest is a normal WezTerm setup.

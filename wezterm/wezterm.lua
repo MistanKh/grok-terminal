@@ -10,7 +10,7 @@ local config = wezterm.config_builder()
 -- ----------------------------------------------------------------------------
 local grok = {
   bg0_h        = "#0C0C0C", -- Chrome / tab bar
-  bg0          = "#121212", -- Terminal canvas
+  bg0          = "#141414", -- Terminal canvas (GrokNight)
   bg1          = "#1A1A1A", -- Active tab / raised surface
   bg2          = "#262B30", -- Selection
   bg3          = "#1C1C1C", -- Muted surface
@@ -149,10 +149,10 @@ config.adjust_window_size_when_changing_font_size = false
 config.window_frame = {
   font = wezterm.font({ family = "JetBrains Mono", weight = "Bold" }),
   font_size = 10.0,
-  active_titlebar_bg = "#121212",
-  inactive_titlebar_bg = "#121212",
-  active_titlebar_border_bottom = "#121212",
-  inactive_titlebar_border_bottom = "#121212",
+  active_titlebar_bg = "#141414",
+  inactive_titlebar_bg = "#141414",
+  active_titlebar_border_bottom = "#141414",
+  inactive_titlebar_border_bottom = "#141414",
 }
 
 -- ----------------------------------------------------------------------------
