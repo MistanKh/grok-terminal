@@ -10,8 +10,8 @@ local config = wezterm.config_builder()
 -- ----------------------------------------------------------------------------
 local grok = {
   bg0_h        = "#0C0C0C", -- Chrome / tab bar
-  bg0          = "#101010", -- Terminal canvas
-  bg1          = "#131313", -- Active tab / raised surface
+  bg0          = "#121212", -- Terminal canvas
+  bg1          = "#1A1A1A", -- Active tab / raised surface
   bg2          = "#262B30", -- Selection
   bg3          = "#1C1C1C", -- Muted surface
   bg4          = "#2A2A2A", -- Borders / scrollbar
@@ -149,10 +149,10 @@ config.adjust_window_size_when_changing_font_size = false
 config.window_frame = {
   font = wezterm.font({ family = "JetBrains Mono", weight = "Bold" }),
   font_size = 10.0,
-  active_titlebar_bg = "#101010",
-  inactive_titlebar_bg = "#101010",
-  active_titlebar_border_bottom = "#101010",
-  inactive_titlebar_border_bottom = "#101010",
+  active_titlebar_bg = "#121212",
+  inactive_titlebar_bg = "#121212",
+  active_titlebar_border_bottom = "#121212",
+  inactive_titlebar_border_bottom = "#121212",
 }
 
 -- ----------------------------------------------------------------------------
@@ -201,13 +201,13 @@ config.tab_max_width = 28
 -- Custom Tab Title Formatting
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
   local is_active = tab.is_active
-  local bg = is_active and grok.bg1 or grok.bg0_h
+  local bg = is_active and grok.bg1 or grok.bg0
   local fg = is_active and grok.bright_orange or grok.gray
   local index_bg = is_active and grok.bright_orange or grok.bg2
   local index_fg = is_active and grok.bg0_h or grok.fg4
 
   if hover and not is_active then
-    bg = grok.bg0
+    bg = grok.bg3
     fg = grok.fg1
   end
 

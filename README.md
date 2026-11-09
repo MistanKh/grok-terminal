@@ -44,9 +44,9 @@ The scheme defines:
 
 | Role | Color |
 | --- | --- |
-| Terminal canvas | `#101010` |
-| Tab bar / chrome | `#101010` |
-| Active tab | `#131313` |
+| Terminal canvas | `#121212` |
+| Tab bar / chrome | `#121212` |
+| Active tab | `#1A1A1A` |
 | Selection | `#262B30` |
 | Foreground | `#E6E4DF` |
 | Accent / cursor | `#A9BCCB` |
