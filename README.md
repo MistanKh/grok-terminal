@@ -54,7 +54,7 @@ The scheme defines:
 
 The tab bar background deliberately matches the terminal canvas, so there is no
 divider band across the top. The tab edge and window-frame bottom border use the
-same `#101010`.
+same `#121212`.
 
 Only the `grok` palette table, the `Grok Obsidian` color scheme, and the tab and
 status handlers are theme-specific; the rest is a normal WezTerm setup.
