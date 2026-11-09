@@ -31,7 +31,11 @@ Copy-Item .\wezterm\wezterm.lua $HOME\.config\wezterm\wezterm.lua
 
 Reload WezTerm with `Shift+Space`, then `r`, or restart it.
 
-Minimize to the taskbar with `Shift+Space`, then `m`.
+Window management:
+
+- `Shift+Space`, then `m` — minimize to the taskbar
+- `Shift+Space`, then `f` — maximize/restore
+- `Shift+Space`, then `q` — close the current tab; closes the window when it is the last tab (confirmation overlay)
 
 The configuration requires a Nerd Font; it uses JetBrainsMono Nerd Font with
 fallbacks. It also enables WebGPU, Mica on Windows, and 96% window opacity.

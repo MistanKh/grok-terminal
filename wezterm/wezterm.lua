@@ -273,6 +273,19 @@ end)
 -- ----------------------------------------------------------------------------
 config.leader = { key = "Space", mods = "SHIFT", timeout_milliseconds = 1000 }
 
+-- Toggle the active window between maximized and restored.
+local maximized = {}
+local function toggle_maximize(window)
+  local id = window:window_id()
+  if maximized[id] then
+    window:restore()
+    maximized[id] = nil
+  else
+    window:maximize()
+    maximized[id] = true
+  end
+end
+
 config.keys = {
   -- Split Panes (Leader + | for Horizontal, Leader + - for Vertical)
   { key = "|", mods = "LEADER|SHIFT", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
@@ -293,7 +306,9 @@ config.keys = {
   -- Quick Config Reload
   { key = "r", mods = "LEADER", action = wezterm.action.ReloadConfiguration },
 
-  -- Minimize the window to the taskbar
+  -- Window management
+  { key = "q", mods = "LEADER", action = wezterm.action.CloseCurrentTab({ confirm = true }) },
+  { key = "f", mods = "LEADER", action = wezterm.action_callback(toggle_maximize) },
   { key = "m", mods = "LEADER", action = wezterm.action.Hide },
 }
 
