@@ -39,7 +39,8 @@ Window management:
 - `Shift+Space`, then `q` — close the current tab; closes the window when it is the last tab (confirmation overlay)
 
 The configuration requires a Nerd Font; it uses JetBrainsMono Nerd Font with
-fallbacks. It also enables WebGPU, Mica on Windows, and 96% window opacity.
+fallbacks. It also enables WebGPU and an opaque window background
+(`window_background_opacity = 1.0`), so the canvas renders as flat `#141414`.
 
 The scheme defines:
 

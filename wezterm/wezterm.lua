@@ -159,8 +159,7 @@ config.window_frame = {
 -- Window Appearance & Aesthetics
 -- ----------------------------------------------------------------------------
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.96
-config.win32_system_backdrop = "Mica"
+config.window_background_opacity = 1.0
 
 config.window_padding = {
   left = 16,
